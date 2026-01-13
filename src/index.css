@@ -1,0 +1,5 @@
+@import "tailwindcss";
+.custom-top-header{
+    background-color: black;
+    color: aliceblue;
+}
