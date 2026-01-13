@@ -1,6 +1,7 @@
 import React from "react";
 import wishlist from '../../assets/heart.svg';
-import cart from '../../assets/cart.svg';
+import Cart from "../../assets/Cart.svg";
+
 
 const Header = ({ children }) => {
   return (
@@ -42,7 +43,7 @@ const Header = ({ children }) => {
 
          <div className="icons flex">
          <img src={wishlist} alt="wishlist" />
-         <img src={cart} alt="wishlist" />
+         <img src={Cart} alt="wishlist" />
          </div>
       </header>
 
