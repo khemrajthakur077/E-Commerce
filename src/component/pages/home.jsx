@@ -172,7 +172,7 @@ const {
         <button onClick={categoryLeft}
         ><img src={LeftArrow} alt="" /></button>
         <button onClick={categoryRight}
-        ><img src={RightArrow} alt="" /></button>
+        ><img src={RightArrow} alt="" /></button> 
         </div> 
     </div>
     </div>
