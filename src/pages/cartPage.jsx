@@ -98,7 +98,7 @@ function CartPage() {
 
         {/* Coupon */}
 
-        <div className="flex gap-3 ">
+        <div className=" gap-3 flex flex-col">
           <input
             type="text"
             placeholder="Coupon Code"

@@ -22,9 +22,7 @@ import Trust from '../assets/trust.png';
 // arrow
 import LeftArrow from '../assets/left-arrow.png';
 import RightArrow from '../assets/right-arrow.png';
-// Counter
-import {useDispatch , useSelector } from 'react-redux'
-import { decreament, incriment } from '../store/slices/CounterSlice';
+
 // import use state
 import { useState } from 'react';
 
@@ -35,10 +33,6 @@ import { useState } from 'react';
 const Home = () => {
   // side bar use state
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  // side bar use state end
-  const count = useSelector((state) => state.counter.value)
-  const dispatch = useDispatch()
-
 
 
 // scroll flash sale section
@@ -57,22 +51,12 @@ const {
 
   return (
     <>  
-<button aria-level="incriment value" onClick={()=> dispatch(incriment())}>
-incriment
-</button>
-<button aria-level="decrease value" onClick={()=> dispatch(decreament())}>
-decreament
-</button>
-<span>{count}</span>
-
-
-   
     <div className="relative flex w-full">
 
   {/* Toggle Button (Below 1100px only) */}
   <button
     onClick={() => setSidebarOpen(true)}
-    className="absolute min-[1100px]:hidden p-3 text-2xl"
+    className="absolute min-[1100px]:hidden p-3 text-xl"
   >
     ➡️
   </button>
